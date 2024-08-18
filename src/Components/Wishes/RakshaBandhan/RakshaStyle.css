@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap');
+
+.ewish-main-panel
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.first-door
+{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.door-opening
+{
+    height: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+}
+
+.door-opening img
+{
+    height: 100%;
+}
+
+
+.rakhi-thebtn
+{
+    position: absolute;
+    top: calc((100% - 100px) /2);
+    left: calc((100% - 100px) /2);
+    height: 100px!important;
+}
+
+.the-msg-toclick
+{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.rakhi-thebtn img
+{
+    animation: 3s rakhiAnimation infinite linear;
+    cursor: pointer;
+}
+
+@keyframes rakhiAnimation
+{
+    0%
+    {
+        transform: scale(100%) rotateZ(0deg);
+    }
+    25%
+    {
+        transform: scale(110%) rotateZ(90deg);
+    }
+    50%
+    {
+        transform: scale(100%) rotateZ(180deg);
+    }
+    75%
+    {
+        transform: scale(110%) rotateZ(270deg);
+    }
+    100%
+    {  
+        transform: scale(100%) rotateZ(360deg);
+    }
+}
+
+.the-msg-toclick h3
+{
+    background-color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.zIndex-0
+{
+    z-index: 0;
+}
+
+
+.openDoor .leftdoor
+{
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.openDoor .rightdoor
+{
+    transform: translateX(100%);
+    transition: all 3s;
+}
+
+.display-none
+{
+    display: none;
+}
+
+.greeting-section
+{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thename-decor
+{
+    font-family: "Inknut Antiqua", serif;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 1);
+    font-weight: 700;
+    animation: glow 10s ease-in-out infinite;
+    display: block;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+}
+
+@keyframes glow
+{
+    0%, 100% {
+        text-shadow: 0 0 30px red;
+    }
+    25% {
+        text-shadow: 0 0 30px orange;
+    }
+    50% {
+        text-shadow: 0 0 30px #228b22;
+    }
+    75% {
+        text-shadow: 0 0 30px #0ff;
+    }
+}
+
+.thename-decor:nth-child(2) {
+    transform: translateZ(5px);
+}
+
+.thename-decor:nth-child(3) {
+    transform: translateZ(10px);
+}
+
+.thename-decor:nth-child(4) {
+    transform: translateZ(15px);
+}
+
+.thename-decor:nth-child(5) {
+    transform: translateZ(20px);
+}
+
+.thename-decor:nth-child(6) {
+    transform: translateZ(25px);
+}
+
+.theaur-decor
+{
+    font-family: "Inknut Antiqua", serif;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 30px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+}
+
+.bg-vdo
+{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    aspect-ratio: 7/8;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+figure.name {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    animation: wobble 5s ease-in-out infinite;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+}
+
+@keyframes wobble
+{
+    0%, 100% {
+        transform: scale(70%) rotate3d(1,1,0,30deg);
+    }
+    25% {
+        transform: scale(80%) rotate3d(-1,1,0,30deg);
+    }
+    50% {
+        transform: scale(100%) rotate3d(1,0,0,10deg);
+    }
+    75% {
+        transform: scale(80%) rotate3d(1,-1,0,30deg);
+    }
+}
+
+
+.rakhi-wish-q
+{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 1.8em;
+    text-align: center;
+    font-family: "Inknut Antiqua", serif;
+    color: gold;
+    text-shadow: 0 0 30px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+}
+
+
+.name-enter-section
+{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+.nameInput
+{
+    outline: none;
+    border: 2px solid blue;
+    border-radius: 8px;
+    height: 50px;
+    background-color: red;
+    width: 60%;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nameInput::placeholder
+{
+    color: #fff;
+}
+
+.enterNamebtn
+{
+    outline: none;
+    border: 2px solid blue;
+    border-radius: 8px;
+    height: 50px;
+    background-color: rgb(239, 0, 0);
+    width: 40%;
+    color: #fff;
+    font-weight: 700;
+}
+
+.sendtoall
+{
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 0;
+    background-color: rgb(255, 145, 0);
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+}
+
+.fa-whatsapp
+{
+    color: #fff;
+    font-size: 1.6em;
+}
+
+.fa-hand-point-left,
+.fa-hand-point-right
+{
+    color: yellow;
+}
+
+.theloading-env
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* From Uiverse.io by Ratinax */ 
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: not-allowed;
+    scale: 0.7;
+  }
+  
+  .central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    box-shadow: 0.5em 1em 1em cyan,
+      -0.5em 0.5em 1em lime,
+      0.5em -0.5em 1em white,
+      -0.5em -0.5em 1em yellow;
+  }
+  
+  .external-shadow {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0.5em 0.5em 3em cyan,
+      -0.5em 0.5em 3em lime,
+      0.5em -0.5em 3em white,
+      -0.5em -0.5em 3em yellow;
+    z-index: 999;
+    animation: rotate 2s linear infinite;
+    background-color: #212121;
+  }
+  
+  .intern {
+    position: absolute;
+    color: white;
+    z-index: 9999;
+    font-size: 1.6em;
+  }
+  
+  .intern::before {
+    content: "100%";
+    animation: percent 2s ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(180deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes percent {
+    0% {
+      content: '0%';
+    }
+  
+    25% {
+      content: '25%';
+    }
+  
+    33% {
+      content: '33%';
+    }
+  
+    42% {
+      content: '42%';
+    }
+  
+    51% {
+      content: '51%';
+    }
+  
+    67% {
+      content: '67%';
+    }
+  
+    74% {
+      content: '74%';
+    }
+  
+    75% {
+      content: '75%';
+    }
+  
+    86% {
+      content: '86%';
+    }
+  
+    95% {
+      content: '95%';
+    }
+  
+    98% {
+      content: '98%';
+    }
+  
+    99% {
+      content: '99%';
+    }
+  }
